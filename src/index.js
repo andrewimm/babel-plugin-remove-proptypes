@@ -5,7 +5,7 @@ export default function({ Plugin, types: t }) {
         if (t.isMemberExpression(node.left) &&
             t.isIdentifier(node.left.property, { name: 'propTypes' }) &&
             t.isObjectExpression(node.right)) {
-          return t.objectExpression([]);
+          return t.assignmentExpression('=', node.left, t.objectExpression([]));
         }
       }
     }
