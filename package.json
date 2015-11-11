@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-remove-proptypes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove static declarations of React propTypes",
   "repository": "andrewimm/babel-plugin-remove-proptypes",
   "license": "BSD-3-Clause",
