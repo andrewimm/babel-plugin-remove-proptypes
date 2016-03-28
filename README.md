@@ -12,7 +12,8 @@ MyComponent.propTypes = {
 ```
 Output:
 ```js
-// Does not contain any propTypes declarations
+// Declaration is maintained in case other code references this propTypes object
+MyComponent.propTypes = {};
 ```
 
 The plugin can be used to remove PropTypes from production environments, where they have no effect.
